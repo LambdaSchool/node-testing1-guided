@@ -2,10 +2,17 @@
   "name": "node-testing1-guided",
   "version": "1.0.0",
   "scripts": {
-    "ketchup": "git fetch && git reset --hard origin/lecture"
+    "ketchup": "git fetch && git reset --hard origin/lecture",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LambdaSchool/node-testing1-guided.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.30.0",
+    "@types/jest": "^26.0.24",
+    "jest": "^27.0.6"
   }
 }
