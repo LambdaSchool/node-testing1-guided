@@ -17,7 +17,7 @@ test("is not the toEqual and toBe",()=>{
 describe("car class",()=>{
     let odyssey
     beforeEach(()=>{
-        odyssey = new Car("Honda","Odyssey")
+        odyssey = new Car("honda","odyssey")
     })
 
     it("exists",()=>{
