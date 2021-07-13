@@ -22,4 +22,8 @@ describe("car class",()=>{
         const odyssey = new Car("Honda","Odyssey")
         expect(odyssey).toBeInstanceOf(Car)
     })
+    it("cars have a make property",()=>{
+        const odyssey = new Car("Honda","Odyssey")
+        expect(odyssey).toHaveProperty("make")
+    })
 })
