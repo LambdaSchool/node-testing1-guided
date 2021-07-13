@@ -33,4 +33,7 @@ describe("car class",()=>{
     it("cars have a model property", ()=>{
         expect(odyssey).toHaveProperty("model")
     })
+    it("has odometer prop starting at 0", ()=>{
+        expect(odyssey).toHaveProperty("odometer",0)
+    })
 })
