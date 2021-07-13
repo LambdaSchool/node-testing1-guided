@@ -26,7 +26,7 @@ describe("car class",()=>{
     it("creates car instances",()=>{
         expect(odyssey).toBeInstanceOf(Car)
     })
-    it("cars have a make property",()=>{
+    it.only("cars have a make property",()=>{
         expect(odyssey).toHaveProperty("make")
         // expect(odyssey).toEqual({make:"honda"})
     })
