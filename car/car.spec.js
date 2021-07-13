@@ -8,4 +8,5 @@ test("is not the toEqual and toBe",()=>{
     let b = {}
     let c = a
     expect(a).not.toBe(b)
+    expect(a).toEqual(b)
 })
