@@ -11,3 +11,9 @@ test("is not the toEqual and toBe",()=>{
     // expect(a).toEqual(b)
     expect(a).toBe(c)
 })
+
+describe("car class",()=>{
+    it("exists",()=>{
+        expect(Car).toBeDefined()
+    })
+})
