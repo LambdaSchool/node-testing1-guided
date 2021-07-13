@@ -15,6 +15,7 @@ test("is not the toEqual and toBe",()=>{
 })
 
 describe("car class",()=>{
+    //.only skips tests
     let odyssey
     beforeEach(()=>{
         odyssey = new Car("honda","odyssey")
@@ -26,7 +27,7 @@ describe("car class",()=>{
     it("creates car instances",()=>{
         expect(odyssey).toBeInstanceOf(Car)
     })
-    it.only("cars have a make property",()=>{
+    it("cars have a make property",()=>{
         expect(odyssey).toHaveProperty("make")
         // expect(odyssey).toEqual({make:"honda"})
     })
