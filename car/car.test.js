@@ -39,4 +39,11 @@ describe("car class",()=>{
     it("cars have a drive method",()=>{
         expect(odyssey.drive).toBeInstanceOf(Function)
     })
+    it("drive method returns drive distance",()=>{
+        //arrange act assert
+        const expected = 10
+        const actual = odyssey.drive(10)
+        expect(actual).toBe(expected)
+    })
+
 })
