@@ -37,6 +37,6 @@ describe("car class",()=>{
         expect(odyssey).toHaveProperty("odometer",0)
     })
     it("cars have a drive method",()=>{
-        expect(odyssey.drive).toBeInstanceOf(Function)
+        expect(odyssey.drive).toBeInstanceOf(Car)
     })
 })
