@@ -18,4 +18,8 @@ describe("car class",()=>{
     it("exists",()=>{
         expect(Car).toBeDefined()
     })
+    it("creates car instances",()=>{
+        const odyssey = new Car("Honda","Odyssey")
+        expect(odyssey).toBeInstanceOf(Car)
+    })
 })
