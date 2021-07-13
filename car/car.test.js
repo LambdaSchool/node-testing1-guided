@@ -15,15 +15,18 @@ test("is not the toEqual and toBe",()=>{
 })
 
 describe("car class",()=>{
+    let odyssey
+    beforeEach(()=>{
+        odyssey = new Car("Honda","Odyssey")
+    })
+
     it("exists",()=>{
         expect(Car).toBeDefined()
     })
     it("creates car instances",()=>{
-        const odyssey = new Car("Honda","Odyssey")
         expect(odyssey).toBeInstanceOf(Car)
     })
     it("cars have a make property",()=>{
-        const odyssey = new Car("Honda","Odyssey")
         expect(odyssey).toHaveProperty("make")
     })
 })
