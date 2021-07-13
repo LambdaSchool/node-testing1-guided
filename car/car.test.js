@@ -28,5 +28,6 @@ describe("car class",()=>{
     })
     it("cars have a make property",()=>{
         expect(odyssey).toHaveProperty("make")
+        expect(odyssey).toEqual({make:"honda"})
     })
 })
