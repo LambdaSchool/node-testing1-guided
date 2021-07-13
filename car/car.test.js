@@ -45,5 +45,12 @@ describe("car class",()=>{
         const actual = odyssey.drive(10)
         expect(actual).toBe(expected)
     })
+    it("drive method increases odo by driven dist",()=>{
+        expect(odyssey.odometer).toBe(0)
+        odyssey.drive(10)
+        expect(odyssey.odometer).toBe(10)
+        odyssey.drive(10)
+        expect(odyssey.odometer).toBe(20)
+    })
 
 })
