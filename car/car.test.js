@@ -53,5 +53,8 @@ describe("car class",()=>{
         odyssey.drive(10)
         expect(odyssey.odometer).toBe(20)
     })
-
+    it("driveAsync method resolves to the driven distance", async ()=>{
+        const distance = await odyssey.driveAsync(10)
+        expect(distance).toBe(10)
+    })
 })
