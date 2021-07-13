@@ -41,7 +41,7 @@ describe("car class",()=>{
     })
     it("drive method returns drive distance",()=>{
         //arrange act assert
-        const expected = 10
+        const expected = `${10} miles driven`
         const actual = odyssey.drive(10)
         expect(actual).toBe(expected)
     })
